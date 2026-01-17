@@ -5,15 +5,15 @@ You can run all manifests in this repository using **KodeKloud’s free Kubernet
 🔗 **KodeKloud Kubernetes Labs:**
 [https://kode.wiki/kubernetes-labs](https://kode.wiki/kubernetes-labs)
 
-## 🎥 Video Tutorial
+## Video Tutorial
 
 For a guided walkthrough of Kubernetes basics and lab usage, refer to this video:
 
-🎬 [https://youtu.be/XuSQU5Grv1g?si=ytzf-PvvWJ2qq2YO](https://youtu.be/XuSQU5Grv1g?si=ytzf-PvvWJ2qq2YO)
+ [https://youtu.be/XuSQU5Grv1g?si=ytzf-PvvWJ2qq2YO](https://youtu.be/XuSQU5Grv1g?si=ytzf-PvvWJ2qq2YO)
 
 ---
 
-## 📂 What’s Inside This Repository
+##  What’s Inside This Repository
 
 The repository contains Kubernetes YAML manifests that define:
 
@@ -37,21 +37,23 @@ Forking is recommended so you can:
 
 ### 2️⃣ Clone Your Fork in the Lab
 
-
+``` bash
 git clone https://github.com/<your-username>/K8s-voting-app.git
 cd K8s-voting-app
+```
 
 ### 3️⃣ Apply the Manifests
 
-
+``` bash
 kubectl apply -f .
-
+```
 
 ### 4️⃣ Verify Resources
 
+``` bash
 kubectl get pods
 kubectl get services
-
+```
 
 
 ##  Accessing the Application
@@ -59,9 +61,9 @@ kubectl get services
 * Use **NodePort** services and the node IP
 * Or use **port-forwarding**:
 
-
+```bash
 kubectl port-forward svc/<service-name> 8080:80
-
+```
 
 Then open:
 
